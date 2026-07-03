@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ホーム - Improved v2</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main-content">メインコンテンツへスキップ</a>
+
+<header class="site">
+  <a class="brand" href="#">
+    <span class="brand-mark">AB<span>creative</span></span>
+    <span class="brand-text">
+      <h1>株式会社 ABNew</h1>
+      <p>未来を共に創る、信頼のパートナー</p>
+    </span>
+  </a>
+  <div class="header-actions">
+    <a class="action-btn" href="#">
+      <svg viewBox="0 0 24 24" fill="none"><path d="M3 6l9 6 9-6M4 5h16a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <span class="label">お問い合わせ</span>
+    </a>
+    <a class="action-btn phone" href="tel:0312345678">
+      <svg viewBox="0 0 24 24" fill="none"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <span class="label">03-1234-5678</span>
+    </a>
+    <button class="menu-btn" aria-label="メニューを開く" aria-expanded="false">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M4 6h16M4 12h16M4 18h16" stroke="#222" stroke-width="2" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+</header>
+
+<section class="hero" aria-roledescription="carousel" aria-label="お知らせスライド">
+  <div class="hero-inner"><h2>テキスト2テキスト2<br>テキスト2テキスト2</h2></div>
+  <div class="hero-controls">
+    <button class="hero-arrow" aria-label="前のスライド"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+    <button class="hero-arrow" aria-label="次のスライド"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+  </div>
+  <div class="hero-bottom">
+    <div class="hero-dots" role="tablist" aria-label="スライド選択">
+      <button role="tab" aria-current="true" aria-label="スライド1"></button>
+      <button role="tab" aria-current="false" aria-label="スライド2"></button>
+      <button role="tab" aria-current="false" aria-label="スライド3"></button>
+    </div>
+    <button class="hero-pause" aria-label="スライドの自動再生を一時停止" aria-pressed="false">
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="5" width="4" height="14"/><rect x="14" y="5" width="4" height="14"/></svg>
+    </button>
+  </div>
+</section>
+
+<main id="main-content">
+
+  <!-- INTRO -->
+  <div class="intro">
+    <p class="eyebrow">Our philosophy</p>
+    <h2>未来を共に創る、信頼のパートナー</h2>
+    <div class="accent-rule"></div>
+    <p class="sub">私たちのサービスで、あなたのビジネスを次のステージへ</p>
+    <p class="lead">
+      私たちは、IT業界において、<strong>WEB制作</strong>、<strong>開発</strong>のほか<strong>半導体開発</strong>業務を行っています。
+      弊社では単に「作る」だけでなく、企画・デザイン・開発・運用・改善までトータルでサポートするスタンスで
+      お客様に向き合って伴走を心がけております。また保守やメンテナンスにも対応しており、
+      弊社独自で開発した<strong>20年のノウハウ</strong>を惜しみなくトレンドに合わせてクライアント様にお届けします。
+    </p>
+    <div class="intro-tags">
+      <span class="pill">🖥 WEB制作</span>
+      <span class="pill">⚙ WEB開発</span>
+      <span class="pill">🔧 半導体開発</span>
+      <span class="pill">🛠 運用・保守</span>
+    </div>
+  </div>
+
+  <!-- SERVICES -->
+  <section class="services">
+    <div class="section-heading">
+      <h2>事業紹介</h2>
+      <p>Business introduction</p>
+      <div class="accent-rule"></div>
+    </div>
+    <div class="services-grid">
+      <a class="service-card" href="./bussiness-page/index.html" aria-label="WEB制作の詳細ページへ">
+        <div class="service-media web-design">
+          <span class="badge">Design &amp; Build</span>
+          <div class="title-row">
+            <span class="title">WEB制作</span>
+            <span class="service-arrow" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          </div>
+        </div>
+        <div class="service-body">私たちは、クライアントのニーズに応じたデザインからコーディング、コンテンツ作成まで、トータルでサポートします。</div>
+        <div class="service-more">詳しく見る <svg width="11" height="11" viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+      </a>
+      <a class="service-card" href="./bussiness-page/index.html" aria-label="WEB開発の詳細ページへ">
+        <div class="service-media web-dev">
+          <span class="badge">Frontend &amp; Backend</span>
+          <div class="title-row">
+            <span class="title">WEB開発</span>
+            <span class="service-arrow" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          </div>
+        </div>
+        <div class="service-body">フロントエンドからバックエンドまで、最新の技術を駆使して高性能なアプリケーションを開発します。</div>
+        <div class="service-more">詳しく見る <svg width="11" height="11" viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+      </a>
+      <a class="service-card" href="./bussiness-page/index.html" aria-label="半導体開発の詳細ページへ">
+        <div class="service-media chip">
+          <span class="badge">Design to Manufacturing</span>
+          <div class="title-row">
+            <span class="title">半導体開発</span>
+            <span class="service-arrow" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          </div>
+        </div>
+        <div class="service-body">設計から製造、テストまでの一貫したプロセスを通じて、高品質な製品をお届けします。</div>
+        <div class="service-more">詳しく見る <svg width="11" height="11" viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+      </a>
+    </div>
+  </section>
+
+  <!-- NEWS -->
+  <section class="news">
+    <div class="section-heading">
+      <h2>お知らせ</h2>
+      <p>News</p>
+      <div class="accent-rule"></div>
+    </div>
+    <div class="news-list">
+      <a class="news-row" href="#">
+        <span class="news-tag news">ニュース</span>
+        <span class="news-date">yyyy年mm月dd日</span>
+        <span class="news-text">WEB制作 実績ページを更新しました</span>
+        <span class="news-chevron"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      </a>
+      <a class="news-row" href="#">
+        <span class="news-tag recruit">採用情報</span>
+        <span class="news-date">yyyy年mm月dd日</span>
+        <span class="news-text">中途採用ページを更新しました</span>
+        <span class="news-chevron"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      </a>
+      <a class="news-row" href="#">
+        <span class="news-tag important">重要なお知らせ</span>
+        <span class="news-date">yyyy年mm月dd日</span>
+        <span class="news-text">当社を装った不審なメールにご注意ください</span>
+        <span class="news-chevron"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      </a>
+    </div>
+    <a class="news-more" href="#">
+      お知らせ一覧を見る
+      <span class="circle"><svg width="11" height="11" viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+    </a>
+  </section>
+
+  <!-- COMPANY OVERVIEW -->
+  <section class="company-band">
+    <div class="company-inner">
+      <div class="section-heading">
+        <h2>会社概要</h2>
+        <p>Company</p>
+        <div class="accent-rule"></div>
+      </div>
+      <div class="company-cols">
+        <a class="info-card" href="./company-profile/index.html" aria-label="代表の挨拶ページへ">
+          <div class="head">代表の挨拶
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="media exec"></div>
+          <div class="foot">挨拶を読む <svg width="10" height="10" viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        </a>
+        <div class="stack-cards">
+          <a class="info-card" href="./company-profile/index.html" aria-label="事業の強みページへ">
+            <div class="head">事業の強み
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <div class="media strength" style="height:80px;"></div>
+            <div class="foot">強みを見る <svg width="10" height="10" viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          </a>
+          <a class="info-card" href="../company-profile/index.html" aria-label="会社沿革ページへ">
+            <div class="head">会社沿革
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <div class="media history" style="height:80px;"></div>
+            <div class="foot">沿革を見る <svg width="10" height="10" viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ACCESS -->
+  <section class="access">
+    <div class="section-heading">
+      <h2>アクセス</h2>
+      <p>Access</p>
+      <div class="accent-rule"></div>
+    </div>
+    <div class="access-map">
+      <span class="ph-label">地図（Google マップ）</span>
+      <a class="open-map" href="#">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Google マップで開く
+      </a>
+    </div>
+    <div class="access-info-grid">
+      <div class="access-item">
+        <span class="icon" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M12 21s7-6.5 7-12a7 7 0 1 0-14 0c0 5.5 7 12 7 12z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="9" r="2.3" stroke="currentColor" stroke-width="1.8"/></svg></span>
+        <div>
+          <div class="label">住所</div>
+          <div class="value">〒110-0015 東京都台東区東上野3-24-9 MITAビル3F
+            <button class="copy-btn" type="button" onclick="this.textContent='コピーしました';this.classList.add('copied')">住所をコピー</button>
+          </div>
+        </div>
+      </div>
+      <div class="access-item">
+        <span class="icon" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><rect x="6" y="2" width="12" height="20" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M6 18h12" stroke="currentColor" stroke-width="1.8"/></svg></span>
+        <div>
+          <div class="label">最寄り駅</div>
+          <div class="value">JR上野駅 入谷改札（パンダ口）より徒歩7分</div>
+        </div>
+      </div>
+      <div class="access-item">
+        <span class="icon" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        <div>
+          <div class="label">電話番号</div>
+          <div class="value"><a href="tel:0338361080">03-3836-1080</a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RECRUIT - two cards -->
+  <section class="recruit">
+    <div class="recruit-inner">
+      <div class="section-heading">
+        <h2>採用情報</h2>
+        <p>Recruit</p>
+        <div class="accent-rule"></div>
+      </div>
+      <div class="recruit-grid">
+        <a class="recruit-card" href="#" aria-label="新卒採用・インターンシップページへ（外部サイト）">
+          <div class="recruit-media grad"></div>
+          <span class="recruit-badge">新卒・インターン</span>
+          <div class="recruit-label">
+            <span class="txt">新卒採用/インターンシップ</span>
+            <span class="icon" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          </div>
+        </a>
+        <a class="recruit-card" href="#" aria-label="キャリア採用ページへ">
+          <div class="recruit-media career"></div>
+          <span class="recruit-badge">経験者歓迎</span>
+          <div class="recruit-label">
+            <span class="txt">キャリア採用</span>
+            <span class="icon" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="#fff" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site">
+  <div class="wrap" style="position:relative;">
+    <button class="to-top" aria-label="ページの一番上に戻る">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 19V5M5 12l7-7 7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+    <nav class="cols" aria-label="フッターナビゲーション">
+      <div class="col">
+        <h3>会社情報</h3>
+        <ul>
+          <li><a href="#"><svg width="10" height="10" viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>会社情報</a></li>
+          <li><a href="#"><svg width="10" height="10" viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>ご挨拶</a></li>
+          <li><a href="#"><svg width="10" height="10" viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>事業の強み</a></li>
+          <li><a href="#"><svg width="10" height="10" viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>会社沿革</a></li>
+          <li><a href="#"><svg width="10" height="10" viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>アクセス</a></li>
+        </ul>
+      </div>
+      <div class="col">
+        <h3>事業紹介</h3>
+        <ul>
+          <li><a href="#"><svg width="10" height="10" viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>WEB制作</a></li>
+          <li><a href="#"><svg width="10" height="10" viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>WEB開発</a></li>
+          <li><a href="#"><svg width="10" height="10" viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>半導体開発</a></li>
+        </ul>
+      </div>
+      <div class="col">
+        <h3>採用情報</h3>
+        <ul>
+          <li><a href="#"><svg width="10" height="10" viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>新卒採用/インターンシップ</a></li>
+          <li><a href="#"><svg width="10" height="10" viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>キャリア採用</a></li>
+          <li><a href="#"><svg width="10" height="10" viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>社員の声（インタビュー1）</a></li>
+          <li><a href="#"><svg width="10" height="10" viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>社員の声（インタビュー2）</a></li>
+          <li><a href="#"><svg width="10" height="10" viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>社員の声（インタビュー3）</a></li>
+          <li><a href="#"><svg width="10" height="10" viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>人財に対する考え方</a></li>
+        </ul>
+      </div>
+    </nav>
+    <hr class="divider">
+    <div class="contact-heading">
+      <h3>お問い合わせ</h3>
+      <p>Contact</p>
+    </div>
+    <div class="contact-grid">
+      <a class="contact-card" href="#">
+        <div class="contact-label">WEBでのお問い合わせはこちら</div>
+        <div class="contact-body">
+          <span class="icon-circle" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M3 6l9 6 9-6M4 5h16a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          <span><span class="main-text">WEB入力フォーム</span><span class="sub-text" style="display:block;">24時間受付・入力2分で完了</span></span>
+        </div>
+      </a>
+      <a class="contact-card" href="tel:0120123456">
+        <div class="contact-label">お電話でのお問い合わせ</div>
+        <div class="contact-body">
+          <span class="icon-circle" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          <span><span class="main-text">0120-123-3456</span><span class="sub-text" style="display:block;">受付時間 9:00〜18:00（平日）</span></span>
+        </div>
+      </a>
+    </div>
+    <div class="bottom">
+      <nav aria-label="サブナビゲーション">
+        <a href="#">サイトマップ</a><span class="sep">|</span><a href="#">個人情報保護</a>
+      </nav>
+      <div class="copyright">©株式会社ABNEW</div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
