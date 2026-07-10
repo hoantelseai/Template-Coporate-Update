@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>お問い合わせ - Improved</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main-content">メインコンテンツへスキップ</a>
+
+<header class="site">
+  <a class="brand" href="#">
+    <span class="brand-mark">AB<span>creative</span></span>
+    <span class="brand-text">
+      <h1>株式会社 ABNew</h1>
+      <p>未来を共に創る、信頼のパートナー</p>
+    </span>
+  </a>
+  <div class="header-actions">
+    <a class="action-btn" href="#">
+      <svg viewBox="0 0 24 24" fill="none"><path d="M3 6l9 6 9-6M4 5h16a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <span class="label">お問い合わせ</span>
+    </a>
+    <a class="action-btn phone" href="tel:0312345678">
+      <svg viewBox="0 0 24 24" fill="none"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <span class="label">03-1234-5678</span>
+    </a>
+    <button class="menu-btn" aria-label="メニューを開く" aria-expanded="false">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M4 6h16M4 12h16M4 18h16" stroke="#222" stroke-width="2" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+</header>
+
+<div class="split-hero">
+  <div class="split-hero-photo" role="img" aria-label="キーボードで入力する手元の写真"></div>
+  <div class="split-hero-seam" aria-hidden="true"></div>
+  <div class="split-hero-inner"><h2>お問い合わせ</h2></div>
+  <span class="hero-deco" aria-hidden="true">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M12 2c3 4 6 7.5 6 11a6 6 0 0 1-12 0c0-3.5 3-7 6-11z" stroke="#fff" stroke-width="1.6"/></svg>
+  </span>
+</div>
+
+<main id="main-content">
+
+  <div class="form-wrap">
+    <h3>情報の入力</h3>
+    <p class="lead">お問い合わせの際は、該当する内容をお選びのうえ、ご連絡ください。</p>
+    <p class="lead">なお、ご返信までにお時間を頂戴する場合がございます。あらかじめご了承ください。</p>
+    <p class="lead">お急ぎの場合は、お電話（<a href="tel:0123456789" style="color:var(--teal);font-weight:700;text-decoration:none;">01-2345-6789</a>）にてご連絡くださいますようお願いいたします。</p>
+    <p class="lead">※受付時間：平日 9:00〜17:00</p>
+
+    <p class="required-note">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 2l2.5 8h8l-6.5 5 2.5 8L12 18l-6.5 5 2.5-8L1.5 10h8z" fill="currentColor"/></svg>
+      ※は必須項目です
+    </p>
+
+    <form id="contact-form" novalidate>
+      <div class="field-row">
+        <label class="field-label" for="name">お名前 <span class="req" aria-hidden="true">※</span><span class="visually-hidden">（必須）</span></label>
+        <div class="field-control">
+          <input type="text" id="name" name="name" placeholder="姓名" autocomplete="name" required>
+        </div>
+      </div>
+
+      <div class="field-row">
+        <label class="field-label" for="name-kana">お名前（フリガナ） <span class="req" aria-hidden="true">※</span><span class="visually-hidden">（必須）</span></label>
+        <div class="field-control">
+          <input type="text" id="name-kana" name="name-kana" placeholder="セイメイ" required pattern="[ァ-ヶーｦ-ﾟ\s]+">
+          <p class="field-hint">全角カタカナでご入力ください</p>
+        </div>
+      </div>
+
+      <div class="field-row">
+        <label class="field-label" for="email">メールアドレス <span class="req" aria-hidden="true">※</span><span class="visually-hidden">（必須）</span></label>
+        <div class="field-control">
+          <input type="email" id="email" name="email" placeholder="example@mail.com" autocomplete="email" required>
+        </div>
+      </div>
+
+      <div class="field-row">
+        <label class="field-label" for="email-confirm">メールアドレス確認用 <span class="req" aria-hidden="true">※</span><span class="visually-hidden">（必須）</span></label>
+        <div class="field-control">
+          <input type="email" id="email-confirm" name="email-confirm" placeholder="example@mail.com" autocomplete="email" required>
+          <p class="email-mismatch" id="email-mismatch" role="alert">メールアドレスが一致しません</p>
+        </div>
+      </div>
+
+      <div class="field-row">
+        <label class="field-label" for="inquiry-type">問い合わせ種類 <span class="req" aria-hidden="true">※</span><span class="visually-hidden">（必須）</span></label>
+        <div class="field-control select-wrap">
+          <select id="inquiry-type" name="inquiry-type" required>
+            <option value="" selected disabled>選択してください</option>
+            <option value="service">サービスについて</option>
+            <option value="recruit">採用について</option>
+            <option value="partner">取引・提携について</option>
+            <option value="other">その他</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="field-row">
+        <label class="field-label" for="detail">問い合わせ内容詳細 <span class="opt">任意</span></label>
+        <div class="field-control">
+          <textarea id="detail" name="detail" placeholder="入力してください"></textarea>
+        </div>
+      </div>
+
+      <div class="privacy">
+        <a class="policy-link" href="#">プライバシーポリシーを確認</a>
+        <div class="agree-row">
+          <input type="checkbox" id="agree" name="agree" required>
+          <label for="agree">プライバシーポリシーに同意する</label>
+        </div>
+      </div>
+
+      <div class="submit-wrap">
+        <button type="submit" class="submit-btn" id="submit-btn" disabled aria-disabled="true">確認する</button>
+      </div>
+      <p class="submit-hint" id="submit-hint">プライバシーポリシーに同意すると送信できます</p>
+    </form>
+  </div>
+
+  <nav class="breadcrumb" aria-label="パンくずリスト">
+    <a href="../index.html">
+      <svg width="10" height="10" viewBox="0 0 24 24" fill="none"><path d="M4 12h14M12 6l6 6-6 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      TOPページ
+    </a><span class="sep">/</span><span aria-current="page">お問い合わせ</span>
+  </nav>
+
+</main>
+
+<footer class="site">
+  <div class="wrap" style="position:relative;">
+    <button class="to-top" aria-label="ページの一番上に戻る" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 19V5M5 12l7-7 7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+    <nav class="cols" aria-label="フッターナビゲーション">
+      <div class="col">
+        <h3>会社情報</h3>
+        <ul>
+          <li><a href="#"><svg width="10" height="10" viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>会社情報</a></li>
+          <li><a href="#"><svg width="10" height="10" viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>ご挨拶</a></li>
+          <li><a href="#"><svg width="10" height="10" viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>事業の強み</a></li>
+          <li><a href="#"><svg width="10" height="10" viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>会社沿革</a></li>
+          <li><a href="#"><svg width="10" height="10" viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>アクセス</a></li>
+        </ul>
+      </div>
+      <div class="col">
+        <h3>事業紹介</h3>
+        <ul>
+          <li><a href="#"><svg width="10" height="10" viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>WEB制作</a></li>
+          <li><a href="#"><svg width="10" height="10" viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>WEB開発</a></li>
+          <li><a href="#"><svg width="10" height="10" viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>半導体開発</a></li>
+        </ul>
+      </div>
+      <div class="col">
+        <h3>採用情報</h3>
+        <ul>
+          <li><a href="#"><svg width="10" height="10" viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>新卒採用/インターンシップ</a></li>
+          <li><a href="#"><svg width="10" height="10" viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>キャリア採用</a></li>
+          <li><a href="#"><svg width="10" height="10" viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>社員の声（インタビュー1）</a></li>
+          <li><a href="#"><svg width="10" height="10" viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>社員の声（インタビュー2）</a></li>
+          <li><a href="#"><svg width="10" height="10" viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>社員の声（インタビュー3）</a></li>
+          <li><a href="#"><svg width="10" height="10" viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>人財に対する考え方</a></li>
+        </ul>
+      </div>
+    </nav>
+    <hr class="divider">
+    <div class="contact-heading">
+      <h3>お問い合わせ</h3>
+      <p>Contact</p>
+    </div>
+    <div class="contact-grid">
+      <a class="contact-card" href="#">
+        <div class="contact-label">WEBでのお問い合わせはこちら</div>
+        <div class="contact-body">
+          <span class="icon-circle" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M3 6l9 6 9-6M4 5h16a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          <span><span class="main-text">WEB入力フォーム</span><span class="sub-text" style="display:block;">24時間受付・入力2分で完了</span></span>
+        </div>
+      </a>
+      <a class="contact-card" href="tel:0120123456">
+        <div class="contact-label">お電話でのお問い合わせ</div>
+        <div class="contact-body">
+          <span class="icon-circle" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          <span><span class="main-text">0120-123-3456</span><span class="sub-text" style="display:block;">受付時間 9:00〜18:00（平日）</span></span>
+        </div>
+      </a>
+    </div>
+    <div class="bottom">
+      <nav aria-label="サブナビゲーション">
+        <a href="#">サイトマップ</a><span class="sep">|</span><a href="#">個人情報保護</a>
+      </nav>
+      <div class="copyright">©株式会社ABNEW</div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Submit button stays disabled (as in the reference) until the required
+  // fields are filled AND the privacy checkbox is checked — real, working
+  // gating rather than a permanently-greyed-out button.
+  const form = document.getElementById('contact-form');
+  const submitBtn = document.getElementById('submit-btn');
+  const submitHint = document.getElementById('submit-hint');
+  const agree = document.getElementById('agree');
+  const email = document.getElementById('email');
+  const emailConfirm = document.getElementById('email-confirm');
+  const emailMismatch = document.getElementById('email-mismatch');
+  const requiredFields = Array.from(form.querySelectorAll('[required]'));
+
+  function updateSubmitState() {
+    const allFilled = requiredFields.every(el => {
+      if (el.type === 'checkbox') return el.checked;
+      return el.value.trim() !== '';
+    });
+    const emailsMatch = email.value === '' || email.value === emailConfirm.value;
+    emailMismatch.style.display = (!emailsMatch && emailConfirm.value !== '') ? 'block' : 'none';
+
+    const canSubmit = allFilled && emailsMatch;
+    submitBtn.disabled = !canSubmit;
+    submitBtn.setAttribute('aria-disabled', String(!canSubmit));
+    submitHint.textContent = agree.checked
+      ? (canSubmit ? '内容をご確認のうえ送信してください' : '必須項目をすべて入力してください')
+      : 'プライバシーポリシーに同意すると送信できます';
+  }
+
+  form.addEventListener('input', updateSubmitState);
+  form.addEventListener('change', updateSubmitState);
+  updateSubmitState();
+
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    if (!form.checkValidity()) {
+      form.reportValidity();
+      return;
+    }
+    // Demo only: no backend wired up in this mockup.
+  });
+</script>
+
+</body>
+</html>
